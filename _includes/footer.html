@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col l6 s12">
+      <h5 class="white-text logo-font">{{ site.title }}</h5>
+      <p class="grey-text text-lighten-4">{{ site.description }}</p>
+    </div>
+    <div class="col l4 offset-l2 s12">
+      <h5 class="white-text">Links</h5>
+      <ul>
+        {% if site.author.email %}
+        <li><a class="grey-text text-lighten-3" href="mailto:{{ site.author.email }}">Email</a></li>
+        {% endif %}
+        <li><a class="grey-text text-lighten-3" href="https://github.com/{{ site.author.github }}">Github</a></li>
+        {% if site.author.teleram %}
+        <li><a class="grey-text text-lighten-3" href="https://t.me/@{{ site.author.github }}">Telegram</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer-copyright">
+  <div class="container">
+    © {{ site.time | date: "%Y" }} {{ site.author.name }}. Designed by <a class="grey-text text-lighten-3" href="https://github.com/Astro36/Materialize-Jekyll">Materialize-Jekyll</a>.
+    <div class="right">
+      <span class="white-text" style="font-weight: 400; margin-right: 5px;">View on</span><a class="fa fa-github fa-lg white-text" href="https://github.com/{{ site.author.github }}/{{ site.author.github }}.github.io"></a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+article .card .card-content h1 { font-size: 24px; }
+article .card .card-content h2 { font-size: 22px; }
+article .card .card-content h3 { font-size: 20px; }
+article .card .card-content h4 { font-size: 18px; }
+article .card .card-content h5 { font-size: 16px; }
+article .card .card-content h6 { font-size: 14px; }
+article .card .card-content blockquote { border-left-color: #eee; }
+code {
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+  padding: 1px; }
+
+.logo-font { font-family: 'Coda', cursive; }
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto; }
+
+.parallax-container .section { width: 100%; }

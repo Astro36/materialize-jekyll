@@ -1,0 +1,48 @@
+<ul class="pagination center">
+  {% if paginator.page == 1 %}
+  <li class="disabled"><a href="#!"><i class="material-icons">first_page</i></a></li>
+  {% else %}
+  <li class="waves-effect"><a href="{{ site.url }}"><i class="material-icons">first_page</i></a></li>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+  <li class="waves-effect"><a href="{{ paginator.previous_page_path }}"><i class="material-icons">chevron_left</i></a></li>
+  {% else %}
+  <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+  {% endif %}
+
+  {% if paginator.total_pages <= 5 %}
+    {% assign first = 1 %}
+    {% assign last = paginator.total_pages %}
+  {% else %}
+    {% assign first = paginator.page | minus: 2 %}
+    {% if first < 1 %}
+      {% assign first = 1 %}
+    {% endif %}
+    {% assign last = first | plus: 4 %}
+    {% if last > paginator.total_pages %}
+      {% assign last = paginator.total_pages %}
+    {% endif %}
+  {% endif %}
+  {% for page in (first..last) %}
+    {% if page == paginator.page %}
+    <li class="active"><a href="#!">{{ page }}</a></li>
+    {% elsif page == 1 %}
+    <li class="waves-effect"><a href="{{ site.url }}">{{ page }}</a></li>
+    {% else %}
+    <li class="waves-effect"><a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+  <li class="waves-effect"><a href="{{ paginator.next_page_path }}"><i class="material-icons">chevron_right</i></a></li>
+  {% else %}
+  <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  {% endif %}
+
+  {% if paginator.page == paginator.total_pages %}
+  <li class="disabled"><a href="#!"><i class="material-icons">last_page</i></a></li>
+  {% else %}
+  <li class="waves-effect"><a href="{{ site.paginate_path | replace: ':num', paginator.total_pages }}"><i class="material-icons">last_page</i></a></li>
+  {% endif %}
+</ul>

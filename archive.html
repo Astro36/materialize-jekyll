@@ -1,0 +1,29 @@
+---
+layout: default
+title: Archive
+permalink: /archive/
+---
+
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12">
+        <article>
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Archive</span>
+              <ul class="collection">
+              {% for post in site.posts %}
+                <li class="collection-item">
+                  <strong><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></strong><br>
+                  <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo logo-font center" href="{{ site.url }}">{{ site.title }}</a>
+      <a class="button-collapse" data-activates="mobile-nav" href="#"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="logo-font" href="{{ site.url }}">Home</a></li>
+        <li><a class="logo-font" href="{{ site.url }}/about/">About</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown-menu" data-beloworigin="true"><span class="logo-font">Others</span><i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<ul class="dropdown-content" id="dropdown-menu">
+  <li><a href="{{ site.url }}/archive/">Archive</a></li>
+  <li><a href="{{ site.url }}/categories/">Categories</a></li>
+  <li><a href="{{ site.url }}/tags/">Tags</a></li>
+</ul>
+
+<ul class="side-nav" id="mobile-nav">
+  <li>
+    <div class="user-view">
+      <div class="background" style="background: #00bcd4;"></div>
+      <img class="circle materialboxed" data-caption="{{ site.author.name }}" src="{{ site.url }}/assets/img/logo.png">
+      <span class="white-text logo-font name">{{ site.author.name }}</span>
+      {% if site.author.email %}
+      <a href="mailto:{{ site.author.email }}"><span class="white-text email">{{ site.author.email }}</span></a>
+      {% endif %}
+    </div>
+  </li>
+  <li><a class="subheader">Menu</a></li>
+  <li><a href="{{ site.url }}">Home</a></li>
+  <li><a href="{{ site.url }}/about/">About</a></li>
+  <li><a href="{{ site.url }}/archive/">Archive</a></li>
+  <li><a href="{{ site.url }}/categories/">Categories</a></li>
+  <li><a href="{{ site.url }}/tags/">Tags</a></li>
+</ul>

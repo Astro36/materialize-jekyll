@@ -1,0 +1,33 @@
+title: Materialize Jekyll
+description: Materialize Theme for Jekyll, Github Pages
+url: https://D01T.github.io
+keywords: ["Programming", "Blog"]
+timezone: Asia/Seoul
+permalink: pretty
+
+about: "Lorem ipsum"
+
+author:
+  disqus: 
+  email: astr36@naver.com
+  github: Astro36 # required
+  google_analytics: UA-77377358-3
+  name: Astro # required
+  telegram: psj1026
+
+paginate: 5
+paginate_path: "/page/:num/"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+kramdown:
+  input: GFM
+
+sass:
+  style: compressed

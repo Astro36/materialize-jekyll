@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12">
+        <article>
+          <div class="card">
+            {% if page.image.src %}
+            <div class="card-image">
+              <img class="materialboxed" data-caption="© {{ page.image.copyright }}" src="{{ page.image.src }}">
+              <span class="card-title truncate">{{ page.title }}</span>
+            </div>
+            {% endif %}
+            <div class="card-content">
+              {% unless page.image.src %}
+              <span class="card-title truncate">{{ page.title }}</span>
+              {% endunless %}
+              <p style="font-weight: 600; margin-bottom: 10px;"><time datetime="{{ post.date }}">{{ page.date | date_to_string }}</time>{% if site.author.disqus %} | <a href="{{ site.url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}">Comment</a>{% endif %}</p>
+              <p>{{ content | replace: "<img", "<img class='materialboxed'" }}</p>
+              {% if page.ccl %}
+              <div class="center" style="margin-top: 16px;">
+                <table>
+                  <tr>
+                    <td>
+                      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://i.creativecommons.org/l/{{ page.ccl | downcase }}/4.0/88x31.png" alt="크리에이티브 커먼즈 라이선스"></a>
+                    </td>
+                    <td>
+                      <span style="font-size: 12px; font-weight: 400; min-height: 31px;">
+                        <span rel="dct:type" xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title">{{ page.title }}</span> by <a rel="cc:attributionURL" xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/{{ site.author.github }}" property="cc:attributionName">{{ site.author.name }}</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/{{ page.ccl | downcase }}/4.0/">Creative Commons Attribution 4.0 International License</a>.<br>
+                        {% if site.author.email %}
+                        Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="mailto:{{ site.author.email }}" rel="cc:morePermissions">{{ site.author.email }}</a>.
+                        {% endif %}
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              {% endif %}
+              <div class="divider" style="margin: 16px 0;"></div>
+              {% for tag in page.tags %}
+                <div class="chip">{{ tag }}</div>
+              {% endfor %}
+            </div>
+          </div>
+        </article>
+      </div>
+      {% if site.author.disqus %}
+      <div class="col s12">
+        <article>
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Comments</span>
+              {% include disqus.html %}
+            </div>
+          </div>
+        </article>
+      </div>
+      {% endif %}
+      <div class="col s12">
+        {% if page.next %}
+        <div class="left">
+          <a class="btn-floating waves-effect waves-light white" href="{{ page.next.url }}"><i class="material-icons" style="color: rgba(0,0,0,.87);">arrow_back</i></a>
+          <span style="color: rgba(0,0,0,.87); margin-left: 8px;">Newer</span>
+        </div>
+        {% endif %}
+        {% if page.previous %}
+        <div class="right">
+          <span style="color: rgba(0,0,0,.87); margin-right: 8px;">Older</span>
+          <a class="btn-floating waves-effect waves-light white" href="{{ page.previous.url }}"><i class="material-icons" style="color: rgba(0,0,0,.87);">arrow_forward</i></a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if site.author.disqus %}
+<script id="dsq-count-scr" src="//{{ site.author.disqus }}.disqus.com/count.js" async></script>
+{% endif %}

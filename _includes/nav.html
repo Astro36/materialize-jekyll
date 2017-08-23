@@ -1,11 +1,12 @@
 <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
-      <a class="brand-logo logo-font center" href="{{ site.url }}">{{ site.title }}</a>
+      <a class="brand-logo logo-font center" href="{{ site.url }}" style="max-width: 50%; max-height: 56px; overflow:hidden;">{{ site.title }}</a>
       <a class="button-collapse" data-activates="mobile-nav" href="#"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a class="logo-font" href="{{ site.url }}">Home</a></li>
         <li><a class="logo-font" href="{{ site.url }}/about/">About</a></li>
+        <li><a class="logo-font" href="{{ site.url }}/blog/">Blog</a></li>
         <li><a class="dropdown-button" href="#!" data-activates="dropdown-menu" data-beloworigin="true"><span class="logo-font">Others</span><i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
     </div>
@@ -33,6 +34,7 @@
   <li><a href="{{ site.url }}">Home</a></li>
   <li><a href="{{ site.url }}/about/">About</a></li>
   <li><a href="{{ site.url }}/archive/">Archive</a></li>
+  <li><a href="{{ site.url }}/blog/">Blog</a></li>
   <li><a href="{{ site.url }}/categories/">Categories</a></li>
   <li><a href="{{ site.url }}/tags/">Tags</a></li>
 </ul>

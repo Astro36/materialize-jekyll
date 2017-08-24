@@ -16,7 +16,7 @@ author:
   telegram: psj1026
 
 paginate: 5
-paginate_path: "/page/:num/"
+paginate_path: "/blog/page/:num/"
 
 defaults:
   -

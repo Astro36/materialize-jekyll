@@ -8,7 +8,7 @@
       </span>
     </div>
     {% endif %}
-    <div class="card-content" style="cursor: pointer;" onclick="window.location='{{ 2url }}{{ post.url }}'">
+    <div class="card-content" style="cursor: pointer;" onclick="window.location='{{ url }}{{ post.url }}'">
       {% unless post.image.src %}
       <span class="card-title">{{ post.title }}</span>
       {% endunless %}

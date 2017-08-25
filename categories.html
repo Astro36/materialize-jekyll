@@ -22,7 +22,7 @@ permalink: /categories/
                     {% for post in site.categories[cat_name] %}
                     <li class="collection-item">
                       <strong><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></strong><br>
-                      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                      <a href="{{ url }}{{ post.url }}">{{ post.title }}</a>
                     </li>
                     {% endfor %}
                   </ul>

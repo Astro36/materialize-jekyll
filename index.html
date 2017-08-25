@@ -12,8 +12,6 @@ layout: default
   nav .brand-logo { color: #fff; }
 </style>
 
-{% capture url %}{{ site.url | append: "$" | replace: "/$", "" | replace: "$", "" }}{% endcapture %}
-
 <div class="section no-pad deep-purple">
   <div class="valign-wrapper" style="height: 380px;">
     <div class="container">
@@ -45,7 +43,7 @@ layout: default
             <div class="card">
               <div class="card-image">
                 <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.src }}">
-                <span class="card-title" style="background-color: rgba(0,0,0,.3); cursor: pointer; padding: 8px 24px; width: 100%;" onclick="window.location='{{ site.url }}{{ post.url }}'">
+                <span class="card-title" style="background-color: rgba(0,0,0,.3); cursor: pointer; padding: 8px 24px; width: 100%;" onclick="window.location='{{ url }}{{ post.url }}'">
                   {{ post.title }}<time datetime="{{ post.date }}" style="font-size: 16px;"> | {{ post.date | date_to_string }}</time>
                 </span>
               </div>

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+{% capture url %}{{ site.url | append: "$" | replace: "/$", "" | replace: "$", "" }}{% endcapture %}
+
 <html lang="ko">
 <head>
   {% include meta.html %}

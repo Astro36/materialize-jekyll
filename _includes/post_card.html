@@ -8,7 +8,7 @@
       </span>
     </div>
     {% endif %}
-    <div class="card-content" style="cursor: pointer;" onclick="window.location='{{ site.url }}{{ post.url }}'">
+    <div class="card-content" style="cursor: pointer;" onclick="window.location='{{ 2url }}{{ post.url }}'">
       {% unless post.image.src %}
       <span class="card-title">{{ post.title }}</span>
       {% endunless %}
@@ -17,7 +17,7 @@
       {% if site.author.disqus %}
       <div class="valign-wrapper" style="margin-top: 16px;">
         <i class="material-icons" style="color: #9e9e9e;">comment</i>&nbsp;
-        <span class="disqus-comment-count" data-disqus-identifier="{{ post.id }}" data-disqus-url="{{ site.url }}{{ post.url }}">Comment</span>
+        <span class="disqus-comment-count" data-disqus-identifier="{{ post.id }}" data-disqus-url="{{ url }}{{ post.url }}">Comment</span>
       </div>
       {% endif %}
     </div>

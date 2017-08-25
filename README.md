@@ -13,6 +13,6 @@ Materialize-Jekyll is licensed under the [MIT License](./LICENSE).
 
 [Font Awesome](http://fontawesome.io/) is licensed under [SIL OFL 1.1 and MIT License](http://fontawesome.io/license/) by Font Awesome.
 
-[Material Design Icons](https://material.io/icons/) is licensed under an [Apache 2.0 License](https://github.com/google/material-design-icons/blob/master/LICENSE) by Google.
+[Material Design Icons](https://material.io/icons/) is licensed under an [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE) by Google.
 
-[Roboto](https://fonts.google.com/specimen/Roboto) is licensed under an [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0) by Christian Robertson.
+[Roboto](https://fonts.google.com/specimen/Roboto) is licensed under an [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) by Christian Robertson.

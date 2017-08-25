@@ -12,6 +12,8 @@ layout: default
   nav .brand-logo { color: #fff; }
 </style>
 
+{% capture url %}{{ site.url | append: "$" | replace: "/$", "" | replace: "$", "" }}{% endcapture %}
+
 <div class="section no-pad deep-purple">
   <div class="valign-wrapper" style="height: 380px;">
     <div class="container">

@@ -35,11 +35,11 @@
 // 1. Colors
 // ==========================================================================
 
-$primary-color: color("cyan", "base") !default;
+$primary-color: color("deep-purple", "base") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("blue", "base") !default;
+$secondary-color: color("deep-purple", "base") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "accent-2") !default;
@@ -312,7 +312,7 @@ $h6-fontsize: 1rem !default;
 // ==========================================================================
 
 $footer-font-color: #fff !default;
-$footer-bg-color: color("cyan", "darken-2") !default;
+$footer-bg-color: color("deep-purple", "darken-2") !default;
 $footer-copyright-font-color: rgba(255,255,255,.8) !default;
 $footer-copyright-bg-color: rgba(51,51,51,.08) !default;
 

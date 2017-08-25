@@ -13,7 +13,7 @@ permalink: /tags/
             <div class="card-content">
               <span class="card-title">Tags</span>
               {% for tag in site.tags %}
-                <div class="chip" onclick="$('.collapsible').collapsible('open', {{ forloop.index0 }});">{{ tag | first }}</div>
+                <div class="chip" onclick="$('#posts').collapsible('open', {{ forloop.index0 }});">{{ tag | first }}</div>
               {% endfor %}
             </div>
           </div>
@@ -24,7 +24,7 @@ permalink: /tags/
           <div class="card">
             <div class="card-content">
               <span class="card-title">Posts</span>
-              <ul class="collapsible" data-collapsible="expandable">
+              <ul class="collapsible" data-collapsible="expandable" id="posts">
                 {% for tag in site.tags %}
                 <li>
                 {% capture tag_name %}{{ tag | first }}{% endcapture %}

@@ -4,7 +4,7 @@ layout: default
 
 <style type="text/css">
   nav {
-    background-color: #00bcd4;
+    background-color: #673ab7;
     box-shadow: none;
     color: #fff; }
   nav a { color: #fff; }
@@ -12,7 +12,9 @@ layout: default
   nav .brand-logo { color: #fff; }
 </style>
 
-<div class="section no-pad cyan">
+{% capture url %}{{ site.url | append: "$" | replace: "/$", "" | replace: "$", "" }}{% endcapture %}
+
+<div class="section no-pad deep-purple">
   <div class="valign-wrapper" style="height: 380px;">
     <div class="container">
       <h1 class="row center white-text logo-font">{{ site.title }}</h1>
@@ -20,10 +22,10 @@ layout: default
         <h5 class="col s12 white-text logo-font">{{ site.description }}</h5>
       </div>
       <div class="row center">
-        <a class="btn-flat btn-large waves-effect waves-light cyan logo-font white-text" href="{{ site.url }}about/" style="border: 1px #fff solid; margin-right: 4px;">About</a>
-        <a class="btn-flat btn-large waves-effect waves-light cyan logo-font white-text" href="{{ site.url }}blog/" style="border: 1px #fff solid; margin-left: 4px;">Blog</a>
+        <a class="btn-flat btn-large waves-effect waves-light deep-purple logo-font white-text" href="{{ url }}/about/" style="border: 1px #fff solid; margin-right: 4px;">About</a>
+        <a class="btn-flat btn-large waves-effect waves-light deep-purple logo-font white-text" href="{{ url }}/blog/" style="border: 1px #fff solid; margin-left: 4px;">Blog</a>
         <div style="margin-top: 32px;">
-          <a href="#"><i class="material-icons white-text" style="font-size: 36px;">keyboard_arrow_down</i></a>
+          <a href="#latest-images"><i class="material-icons white-text" style="font-size: 36px;">keyboard_arrow_down</i></a>
         </div>
       </div>
     </div>
@@ -33,6 +35,9 @@ layout: default
 <div class="container">
   <div class="section">
     <div class="row">
+      <div class="col s12">
+        <h4 class="deep-purple-text" id="latest-images">Latest Images</h4>
+      </div>
       <div class="col s12 m6">
         {% for post in site.posts %}
           {% if post.image.src %}
@@ -40,7 +45,7 @@ layout: default
             <div class="card">
               <div class="card-image">
                 <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.src }}">
-                <span class="card-title" style="background-color: rgba(0,0,0,.3); padding: 8px 24px; width: 100%;">
+                <span class="card-title" style="background-color: rgba(0,0,0,.3); cursor: pointer; padding: 8px 24px; width: 100%;" onclick="window.location='{{ site.url }}{{ post.url }}'">
                   {{ post.title }}<time datetime="{{ post.date }}" style="font-size: 16px;"> | {{ post.date | date_to_string }}</time>
                 </span>
               </div>

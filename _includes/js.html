@@ -14,6 +14,10 @@
         $(this).append('<span class="new badge"></span>');
       }
     });
+    var url = window.location.href;
+    if (url.search('/blog') >= 0 || url.search('/archive') >= 0 || url.search('/categories') >= 0 || url.search('/tags') >= 0) {
+      $('#nav-blog').collapsible('open', 0);
+    }
   });
 </script>
 {% if site.author.google_analytics %}

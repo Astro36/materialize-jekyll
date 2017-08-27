@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Lorem Ipsum"
 author: Astro36
 category: notice
@@ -9,6 +8,7 @@ image:
   copyright: Adrian Infernus
 ccl: by-nc-nd
 ---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum sollicitudin tortor, sagittis congue lorem congue quis. Integer pretium iaculis erat pharetra interdum. Aliquam ultrices, enim eget euismod bibendum, enim felis pellentesque massa, vitae gravida diam lectus at quam. Integer consequat, justo eget semper gravida, nunc turpis aliquet arcu, vitae pretium odio orci id tortor. Nulla in lectus eu mauris ultricies luctus mollis in libero. Integer ut eros at leo tempus maximus quis ac orci. Vestibulum scelerisque feugiat efficitur. Aenean molestie enim at dui molestie pretium.
 
 Praesent dapibus justo eget erat malesuada blandit. Maecenas nec sapien suscipit, euismod lectus ut, egestas purus. Nulla non dignissim augue. Donec justo eros, suscipit quis sagittis quis, convallis vehicula leo. Nulla a justo auctor, fringilla augue volutpat, sollicitudin tellus. Duis quis ullamcorper turpis. Sed pellentesque enim ligula, nec laoreet lorem pulvinar at.

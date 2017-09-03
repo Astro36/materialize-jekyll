@@ -2,7 +2,7 @@
   {% if paginator.page == 1 %}
   <li class="disabled"><a href="#!"><i class="material-icons">first_page</i></a></li>
   {% else %}
-  <li class="waves-effect"><a href="{{ site.url }}"><i class="material-icons">first_page</i></a></li>
+  <li class="waves-effect"><a href="{{ url }}/blog"><i class="material-icons">first_page</i></a></li>
   {% endif %}
 
   {% if paginator.previous_page %}
@@ -28,7 +28,7 @@
     {% if page == paginator.page %}
     <li class="active"><a href="#!">{{ page }}</a></li>
     {% elsif page == 1 %}
-    <li class="waves-effect"><a href="{{ site.url }}">{{ page }}</a></li>
+    <li class="waves-effect"><a href="{{ url }}/blog">{{ page }}</a></li>
     {% else %}
     <li class="waves-effect"><a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
     {% endif %}

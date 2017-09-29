@@ -1,11 +1,16 @@
 # Materialize-Jekyll
 
-![Demo Index](https://github.com/Astro36/Materialize-Jekyll/blob/master/assets/img/demo_index.png)
-![Demo Posts](https://github.com/Astro36/Materialize-Jekyll/blob/master/assets/img/demo_posts.png)
-![Demo Tags](https://github.com/Astro36/Materialize-Jekyll/blob/master/assets/img/demo_tags.png)
-Materialize Theme for Jekyll, Github Pages
+> Materialize Theme for Jekyll, Github Pages
 
 ## Demo
+
+| Index | Posts |
+|:-:|:-:|
+| ![Demo Index](https://github.com/Astro36/Materialize-Jekyll/blob/master/assets/img/demo_index.png) | ![Demo Posts](https://github.com/Astro36/Materialize-Jekyll/blob/master/assets/img/demo_posts.png) |
+
+| Tags | Resources |
+|:-:|:-:|
+| ![Demo Tags](https://github.com/Astro36/Materialize-Jekyll/blob/master/assets/img/demo_tags.png) | ![Demo Resources](https://github.com/Astro36/Materialize-Jekyll/blob/master/assets/img/demo_resources.png) |
 
 See [example](http://astro36.me/Materialize-Jekyll/)
 

@@ -21,7 +21,9 @@ layout: default
               <span class="card-title truncate">{{ page.title }}</span>
               {% endunless %}
               <p style="font-weight: 600; margin-bottom: 10px;"><time datetime="{{ post.date }}">{{ page.date | date_to_string }}</time>{% if site.author.disqus %} | <a href="{{ url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}">Comment</a>{% endif %}</p>
-              <p>{{ content | replace: "<img", "<img class='materialboxed'" }}</p>
+              <div id="post-content">
+                {{ content | replace: "<img", "<img class='materialboxed'" }}
+              </div>
               {% if page.ccl %}
               <div class="center" style="margin-top: 16px;">
                 <table>

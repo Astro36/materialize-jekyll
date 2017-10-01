@@ -13,12 +13,12 @@
 </div>
 
 <ul class="dropdown-content" id="dropdown-menu">
-  <li><a class="waves-effect" href="{{ url }}/blog/">Posts</a></li>
-  <li><a class="waves-effect" href="{{ url }}/archive/">Archive</a></li>
-  <li><a class="waves-effect" href="{{ url }}/categories/">Categories</a></li>
-  <li><a class="waves-effect" href="{{ url }}/tags/">Tags</a></li>
+  <li><a class="logo-font waves-effect" href="{{ url }}/blog/">Posts</a></li>
+  <li><a class="logo-font waves-effect" href="{{ url }}/archive/">Archive</a></li>
+  <li><a class="logo-font waves-effect" href="{{ url }}/categories/">Categories</a></li>
+  <li><a class="logo-font waves-effect" href="{{ url }}/tags/">Tags</a></li>
   <li class="divider"></li>
-  <li><a class="waves-effect" href="{{ url }}/resources/">Resources</a></li>
+  <li><a class="logo-font waves-effect" href="{{ url }}/resources/">Resources</a></li>
 </ul>
 
 <ul class="side-nav" id="mobile-nav">
@@ -26,7 +26,7 @@
     <div class="user-view">
       <div class="background deep-purple"></div>
       <img class="circle materialboxed" data-caption="{{ site.author.name }}" src="https://github.com/{{ site.author.github }}.png">
-      <span class="white-text logo-font name">{{ site.author.name }}</span>
+      <span class="white-text name">{{ site.author.name }}</span>
       {% if site.author.email %}
       <a href="mailto:{{ site.author.email }}"><span class="white-text email">{{ site.author.email }}</span></a>
       {% endif %}

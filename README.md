@@ -33,3 +33,5 @@ Materialize-Jekyll is licensed under the [MIT License](./LICENSE).
 [Quicksand](https://fonts.google.com/specimen/Quicksand) is licensed under a [SIL OFL 1.1](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web) by Andrew Paglinawan.
 
 [Roboto](https://fonts.google.com/specimen/Roboto) is licensed under an [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) by Christian Robertson.
+
+[Spoqa Han Sans](https://spoqa.github.io/spoqa-han-sans/ko-KR/) is licensed under a [SIL OFL 1.1](https://github.com/spoqa/spoqa-han-sans/blob/master/LICENSE) by Spoqa.

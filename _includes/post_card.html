@@ -10,7 +10,7 @@
     {% endif %}
     <div class="card-content" style="cursor: pointer;" onclick="window.location='{{ url }}{{ post.url }}'">
       {% unless post.image.src %}
-      <span class="card-title">{{ post.title }}</span>
+      <span class="card-title" style="background-color: rgba(0,0,0,.3); width: 100%;">{{ post.title }}</span>
       {% endunless %}
       <p style="font-weight: 600; margin-bottom: 10px;"><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></p>
       <div id="post-content">

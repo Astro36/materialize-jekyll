@@ -5,6 +5,7 @@ permalink: /tags/
 ---
 
 {% capture url %}{{ site.url | append: "$" | replace: "/$", "" | replace: "$", "" }}{% endcapture %}
+{% capture tags %}{{ site.tags | sort }}{% endcapture %}
 
 <div class="container">
   <div class="section">
@@ -14,7 +15,7 @@ permalink: /tags/
           <div class="card">
             <div class="card-content">
               <span class="card-title">Tags</span>
-              {% for tag in site.tags %}
+              {% for tag in tags %}
                 <div class="chip" onclick="$('#posts').collapsible('open', {{ forloop.index0 }});">{{ tag | first }}</div>
               {% endfor %}
             </div>
@@ -27,13 +28,13 @@ permalink: /tags/
             <div class="card-content">
               <span class="card-title">Posts</span>
               <ul class="collapsible" data-collapsible="expandable" id="posts">
-                {% for tag in site.tags %}
+                {% for tag in tags %}
                 <li>
                 {% capture tag_name %}{{ tag | first }}{% endcapture %}
                 <div class="collapsible-header">{{ tag_name }}</div>
                 <div class="collapsible-body">
                   <ul class="collection">
-                    {% for post in site.tags[tag_name] %}
+                    {% for post in tags[tag_name] %}
                     <li class="collection-item">
                       <strong><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></strong><br>
                       <a href="{{ url }}{{ post.url }}">{{ post.title }}</a>

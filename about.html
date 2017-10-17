@@ -13,7 +13,7 @@ permalink: /about/
             <div class="card-content">
               <span class="card-title">About</span>
               <p>{{ site.about }}</p>
-              <div class="row" style="margin-top: 32px;">
+              <div class="row" style="border-top: 1px solid #dddddd; margin-top: 16px; margin-bottom: 0; padding-top: 16px;">
               {% if site.author.codepen %}
                 <div class="col s1">
                   <a href="http://codepen.io/{{ site.author.codepen }}" target="_blank"><i class="fa fa-codepen fa-2x fa-fw" aria-hidden="true"></i></a>
@@ -22,6 +22,11 @@ permalink: /about/
               {% if site.author.dribbble %}
                 <div class="col s1">
                   <a href="http://dribbble.com/{{ site.author.dribbble }}" target="_blank"><i class="fa fa-dribbble fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.email %}
+                <div class="col s1">
+                  <a href="mailto:{{ site.author.email }}" target="_blank"><i class="fa fa-envelope fa-2x fa-fw" aria-hidden="true"></i></a>
                 </div>
               {% endif %}
               {% if site.author.facebook %}

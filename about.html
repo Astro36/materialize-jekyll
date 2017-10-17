@@ -13,6 +13,108 @@ permalink: /about/
             <div class="card-content">
               <span class="card-title">About</span>
               <p>{{ site.about }}</p>
+              <div class="row" style="margin-top: 32px;">
+              {% if site.author.codepen %}
+                <div class="col s1">
+                  <a href="http://codepen.io/{{ site.author.codepen }}" target="_blank"><i class="fa fa-codepen fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.dribbble %}
+                <div class="col s1">
+                  <a href="http://dribbble.com/{{ site.author.dribbble }}" target="_blank"><i class="fa fa-dribbble fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.facebook %}
+                <div class="col s1">
+                  <a href="http://facebook.com/{{ site.author.facebook }}" target="_blank"><i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.flickr %}
+                <div class="col s1">
+                  <a href="http://www.flickr.com/{{ site.author.flickr }}" target="_blank"><i class="fa fa-flickr fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.foursquare %}
+                <div class="col s1">
+                  <a href="http://foursquare.com/{{ site.author.foursquare }}" target="_blank"><i class="fa fa-foursquare fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.github %}
+                <div class="col s1">
+                  <a href="http://github.com/{{ site.author.github }}" target="_blank"><i class="fa fa-github fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.google_plus %}
+                <div class="col s1">
+                  <a href="http://plus.google.com/+{{ site.author.google_plus }}" target="_blank"><i class="fa fa-google-plus fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.instagram %}
+                <div class="col s1">
+                  <a href="http://instagram.com/{{ site.author.instagram }}" target="_blank"><i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.lastfm %}
+                <div class="col s1">
+                  <a href="http://lastfm.com/user/{{ site.author.lastfm }}" target="_blank"><i class="fa fa-lastfm fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.linkedin %}
+                <div class="col s1">
+                  <a href="http://linkedin.com/in/{{ site.author.linkedin }}" target="_blank"><i class="fa fa-linkedin fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.pinterest %}
+                <div class="col s1">
+                  <a href="http://www.pinterest.com/{{ site.author.pinterest }}" target="_blank"><i class="fa fa-pinterest fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.soundcloud %}
+                <div class="col s1">
+                  <a href="http://soundcloud.com/{{ site.author.soundcloud }}" target="_blank"><i class="fa fa-soundcloud fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.stackoverflow %}
+                <div class="col s1">
+                  <a href="http://stackoverflow.com/users/{{ site.author.stackoverflow }}" target="_blank"><i class="fa fa-stackoverflow fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.steam %}
+                <div class="col s1">
+                  <a href="http://steamcommunity.com/id/{{ site.author.steam }}" target="_blank"><i class="fa fa-steam fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.telegram %}
+                <div class="col s1">
+                  <a href="http://t.me/{{ site.author.telegram }}" target="_blank"><i class="fa fa-telegram fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.tumblr %}
+                <div class="col s1">
+                  <a href="http://{{ site.author.tumblr }}.tumblr.com" target="_blank"><i class="fa fa-tumblr fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.twitter %}
+                <div class="col s1">
+                  <a href="http://twitter.com/{{ site.author.twitter }}" target="_blank"><i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.weibo %}
+                <div class="col s1">
+                  <a href="http://www.weibo.com/{{ site.author.weibo }}" target="_blank"><i class="fa fa-weibo fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.xing %}
+                <div class="col s1">
+                  <a href="http://www.xing.com/profile/{{ site.author.xing }}" target="_blank"><i class="fa fa-xing fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              {% if site.author.youtube %}
+                <div class="col s1">
+                  <a href="https://youtube.com/user/{{ site.author.youtube }}" target="_blank"><i class="fa fa-youtube fa-2x fa-fw" aria-hidden="true"></i></a>
+                </div>
+              {% endif %}
+              </div>
             </div>
           </div>
         </article>

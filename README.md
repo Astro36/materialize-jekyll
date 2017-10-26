@@ -4,6 +4,12 @@
 
 > Materialize Theme for Jekyll, Github Pages
 
+[![Github All Releases](https://img.shields.io/github/downloads/Astro36/Materialize-Jekyll/total.svg)](https://github.com/Astro36/Materialize-Jekyll/releases)
+
+## ChangeLog
+
+See [CHANGELOG](./CHANGELOG.md)
+
 ## Demo
 
 | Index | Posts |
@@ -15,6 +21,29 @@
 | ![Demo Tags](./assets/img/demo_tags.png) | ![Demo Resources](./assets/img/demo_resources.png) |
 
 See [example](http://astro36.me/Materialize-Jekyll/)
+
+## Features
+
+- About
+- Blog
+- Post Acrhive
+- Category
+- Tag Cloud
+- Resources Viewer
+
+## Installation
+
+- Fork this repository
+- Clone your forked repository
+
+```bash
+git clone https://github.com/you/Materialize-Jekyll.git 
+```
+
+## Usage
+
+- Modify `_config.yml` file.
+- Create your post on `_posts` directory.
 
 ## License
 

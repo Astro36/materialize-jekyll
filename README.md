@@ -4,7 +4,7 @@
 
 > Materialize Theme for Jekyll, Github Pages
 
-[![Github All Releases](https://img.shields.io/github/downloads/Astro36/Materialize-Jekyll/total.svg?style=flat-square))](https://github.com/Astro36/Materialize-Jekyll/releases)
+[![Github All Releases](https://img.shields.io/github/downloads/Astro36/Materialize-Jekyll/total.svg?style=flat-square)](https://github.com/Astro36/Materialize-Jekyll/releases)
 
 ## ChangeLog
 

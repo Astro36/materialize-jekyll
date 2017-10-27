@@ -33,19 +33,25 @@ author:
   xing: 
   youtube: 
 
-paginate: 5
-paginate_path: "/blog/page/:num/"
-
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: posts
     values:
       layout: post
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  path: atom.xml
+
 kramdown:
   input: GFM
+
+paginate: 5
+paginate_path: "/blog/page/:num/"
 
 sass:
   style: compressed

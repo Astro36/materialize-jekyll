@@ -21,3 +21,6 @@
 <meta property="og:description" content="{{ site.description }}">
 <meta property="og:image" content="{{ url }}/assets/img/logo.png">
 <title>{{ title }}</title>
+<link rel="canonical" href="{{ url }}{{ page.url }}">
+<link type="application/xml" rel="sitemap" href="{{ url }}/sitemap.xml" title="{{ title }}"/>
+{% feed_meta %}

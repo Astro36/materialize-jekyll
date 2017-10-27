@@ -4,7 +4,7 @@ author: Astro36
 category: notice
 tags: ['lorem', 'ipsum']
 image:
-  src: https://unsplash.com/photos/DrLtv2bgXSc/download?force=true
+  path: https://unsplash.com/photos/DrLtv2bgXSc/download?force=true
   copyright: Adrian Infernus
 ccl: by-nc-nd
 ---

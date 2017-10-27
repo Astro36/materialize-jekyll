@@ -10,14 +10,14 @@ layout: default
       <div class="col s12">
         <article>
           <div class="card">
-            {% if page.image.src %}
+            {% if page.image.path %}
             <div class="card-image">
-              <img class="materialboxed" data-caption="© {{ page.image.copyright }}" src="{{ page.image.src }}">
+              <img class="materialboxed" data-caption="© {{ page.image.copyright }}" src="{{ page.image.path }}">
               <span class="card-title truncate" style="background-color: rgba(0,0,0,.3); width: 100%;">{{ page.title }}</span>
             </div>
             {% endif %}
             <div class="card-content">
-              {% unless page.image.src %}
+              {% unless page.image.path %}
               <span class="card-title truncate">{{ page.title }}</span>
               {% endunless %}
               <p style="font-weight: 600; margin-bottom: 10px;"><time datetime="{{ post.date }}">{{ page.date | date_to_string }}</time>{% if site.author.disqus %} | <a href="{{ url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}">Comment</a>{% endif %}</p>

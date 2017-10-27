@@ -13,11 +13,11 @@ permalink: /resources/
             <div class="card-content">
               <span class="card-title">Images</span>
               <ul class="collapsible" data-collapsible="expandable">
-                {% for post in site.posts %} {% if post.image.src %}
+                {% for post in site.posts %} {% if post.image.path %}
                 <li>
                   <div class="collapsible-header">{{ post.title }}</div>
                   <div class="collapsible-body">
-                    <img class="materialboxed responsive-img" src="{{ post.image.src }}" alt="{{ post.image.copyright }}">
+                    <img class="materialboxed responsive-img" src="{{ post.image.path }}" alt="{{ post.image.copyright }}">
                   </div>
                 </li>
                 {% endif %} {% endfor %}

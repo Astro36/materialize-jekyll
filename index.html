@@ -39,12 +39,12 @@ layout: default
         <h4 class="deep-purple-text" id="latest-images">Latest Images</h4>
       </div>
       {% for post in site.posts %}
-        {% if post.image.src %}
+        {% if post.image.path %}
         <div class="col s12 m6">
           <article>
             <div class="card">
               <div class="card-image">
-                <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.src }}">
+                <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path }}">
                 <span class="card-title" style="background-color: rgba(0,0,0,.3); cursor: pointer; padding: 8px 24px; width: 100%;" onclick="window.location='{{ url }}{{ post.url }}'">
                   {{ post.title }}<time datetime="{{ post.date }}" style="font-size: 16px;"> | {{ post.date | date_to_string }}</time>
                 </span>
